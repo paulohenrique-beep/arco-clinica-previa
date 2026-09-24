@@ -1,0 +1,16 @@
+# Arquivos de páginas salvas e materiais locais fora da landing page
+Instagram.html
+Instagram_files/
+Instagram2.html
+Instagram2_files/
+Instagram/
+
+# Recursos conceituais que não são usados nesta versão
+assets/ambiente-conceitual.png
+assets/consulta-conceitual.png
+
+# Configurações locais
+.vercel/
+node_modules/
+.env*
+!.env.example

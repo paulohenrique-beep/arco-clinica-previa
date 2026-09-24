@@ -1,0 +1,143 @@
+:root{--ink:#17282d;--muted:#7b8586;--cyan:#36b3c7;--paper:#fff;--pale:#e7f1f3;--line:#e5e9e9}
+*{box-sizing:border-box}
+html{scroll-behavior:auto}
+body{margin:0;background:#fff;color:var(--ink);font-family:"DM Sans",Arial,sans-serif}
+a{color:inherit;text-decoration:none}
+a:focus-visible{outline:3px solid var(--cyan);outline-offset:4px}
+h1,h2,h3,p,figure{margin-top:0}
+.hero-shell{position:relative;min-height:670px;margin:30px auto 0;width:min(1440px,calc(100% - 60px));overflow:hidden;border-radius:21px;background:#48616a;color:white}
+.hero-image{position:absolute;inset:0;background-image:linear-gradient(90deg,rgba(12,29,34,.91) 0%,rgba(16,43,50,.70) 39%,rgba(16,43,50,.05) 77%),url("assets/hero-conceitual.png");background-position:center;background-size:cover}
+.site-header{position:relative;z-index:1;height:91px;display:flex;align-items:center;justify-content:space-between;gap:22px;padding:0 4.1%}
+.brand{display:inline-flex;align-items:center;gap:9px;line-height:1}
+.logo-frame{display:block;width:51px;height:51px;flex:none;overflow:hidden;border-radius:10px;background:#fff}
+.logo-frame img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.brand-name{font-size:17px;font-weight:700;letter-spacing:.08em}
+.brand-name small{display:block;margin-top:4px;font-size:8px;font-weight:600;letter-spacing:.36em}
+.site-header nav{display:flex;align-items:center;gap:3px;padding:4px;border:1px solid rgba(255,255,255,.2);border-radius:30px;background:rgba(255,255,255,.11)}
+.site-header nav a{padding:8px 13px;font-size:11px;border-radius:30px}
+.site-header nav .active{background:white;color:var(--ink)}
+.header-cta{border-radius:30px;background:#fff;color:var(--ink);padding:12px 17px;font-size:11px;font-weight:700;white-space:nowrap}
+.header-cta span{margin-left:15px;color:var(--cyan);font-size:14px}
+.hero-content{position:relative;z-index:1;margin:87px 0 0 6.5%;max-width:600px}
+.hero-kicker{font-size:10px;letter-spacing:.17em;font-weight:700;color:#e4f1f2}
+.hero-kicker span{margin:0 9px;color:var(--cyan)}
+.hero-content h1{font-size:clamp(56px,6vw,91px);line-height:.98;letter-spacing:-.075em;margin:28px 0 18px;font-weight:600}
+.hero-content h1 em{font-style:normal;color:#c6e8ed}
+.hero-content>p:not(.hero-kicker){font-size:14px;line-height:1.65;max-width:355px;color:#edf4f4;margin-bottom:26px}
+.pill-button{display:inline-flex;align-items:center;gap:22px;border-radius:30px;background:#fff;color:var(--ink);padding:7px 7px 7px 19px;font-size:11px;font-weight:700}
+.button-arrow{display:grid;place-items:center;background:var(--cyan);border-radius:50%;width:26px;height:26px;color:white;font-size:15px}
+.hero-bottom{position:absolute;z-index:1;left:6.5%;right:5%;bottom:30px;display:flex;align-items:end;justify-content:space-between}
+.hero-note{display:flex;align-items:center;gap:13px;padding:13px 17px;background:rgba(23,40,45,.75);border:1px solid rgba(255,255,255,.24);border-radius:13px;font-size:10px;line-height:1.55}
+.note-dot{width:26px;height:26px;border:1px solid #bbdce2;border-radius:50%;flex:none}
+.note-dot:after{content:"";display:block;background:var(--cyan);height:10px;width:10px;border-radius:50%;margin:7px}
+.hero-scroll{font-size:9px;letter-spacing:.14em}
+.chapter-line{width:min(1320px,calc(100% - 100px));margin:18px auto 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:13px 0;display:flex;justify-content:space-between;gap:18px;color:#849093;font-size:9px;letter-spacing:.16em;font-weight:700}
+.section-wrap{width:min(1320px,calc(100% - 100px));margin:auto}
+.section-label{font-size:10px;letter-spacing:.15em;font-weight:700;color:#758286}
+.section-label span{margin:0 8px;color:var(--cyan)}
+.about{padding:105px 0 82px}
+.about-top{margin-bottom:38px}
+.about-top h2{font-size:clamp(40px,4.1vw,66px);line-height:.99;letter-spacing:-.072em;font-weight:600;margin:12px 0 0}
+.about-top h2 span{color:#85999e}
+.about-showcase{display:grid;grid-template-columns:24% 1fr;gap:25px}
+.about-aside{min-height:270px;display:flex;flex-direction:column;justify-content:space-between;padding:7px 14px 2px 0}
+.about-aside-top{display:flex;align-items:center;gap:11px}
+.aside-symbol{display:block;width:38px;height:38px;border-radius:50%;background:#fff;overflow:hidden;flex:none;border:1px solid #e4f3f5}
+.aside-symbol img{display:block;width:100%;height:100%;object-fit:cover}
+.about-aside-top strong{font-size:11px;line-height:1.4}
+.about-aside-bottom p{max-width:280px;font-size:18px;font-weight:600;letter-spacing:-.03em;line-height:1.45;color:var(--ink);margin:0}
+.about-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+.image-card{height:270px;position:relative;overflow:hidden;border-radius:13px;background:#dbe7e8;color:#fff}
+.image-card img{width:100%;height:100%;object-fit:cover}
+.image-card:nth-child(1) img{object-position:center 36%}
+.image-card:nth-child(2) img{object-position:center 32%}
+.card-shade{position:absolute;inset:42% 0 0;background:linear-gradient(transparent,rgba(8,32,38,.78))}
+.image-card h3{position:absolute;left:16px;bottom:15px;font-size:17px;line-height:1.1;letter-spacing:-.035em;font-weight:600;margin:0}
+.video-card{background:#162c33}
+.video-card video{display:block;width:100%;height:100%;object-fit:cover}
+.testimonials{padding:105px 0 125px}
+.testimonials-heading{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:42px}
+.testimonials h2,.contact h2{font-size:clamp(43px,4.2vw,70px);line-height:1.05;letter-spacing:-.075em;font-weight:600;margin:25px 0 0}
+.testimonials h2 span{color:#93a2a5}
+.testimonials-heading>p{max-width:265px;font-size:14px;line-height:1.7;color:#65757a;margin:0 0 4px}
+.testimonial-window{overflow:hidden}
+.testimonial-track{display:flex;width:max-content}
+.testimonial-track.is-ready{animation:testimonials-slide 38s linear infinite}
+.testimonial-window:hover .testimonial-track,.testimonial-window:focus-within .testimonial-track{animation-play-state:paused}
+.testimonial-group{display:flex;gap:16px;padding-right:16px}
+.testimonial-card{width:350px;min-height:325px;display:flex;flex-direction:column;padding:29px;border-radius:16px;background:#eaf3f4}
+.testimonial-card:nth-child(even){background:#f0f2f2}
+.quote-mark{font-size:55px;line-height:.7;color:var(--cyan);font-weight:700}
+.testimonial-card blockquote{font-size:23px;font-weight:600;letter-spacing:-.045em;line-height:1.25;margin:20px 0 16px}
+.testimonial-card p{font-size:13px;line-height:1.6;color:#596a6f;margin:0 0 22px}
+.testimonial-card strong{font-size:12px;margin-top:auto}
+.testimonial-card small{font-size:10px;color:#718185;margin-top:5px}
+.testimonials-source{display:flex;justify-content:space-between;gap:20px;align-items:center;margin-top:17px;font-size:10px;color:#819094}
+.testimonials-source a{font-weight:700;color:#2c6470;text-decoration:underline;text-underline-offset:3px}
+@keyframes testimonials-slide{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.testimonial-track.is-ready{animation:none}.testimonial-window{overflow-x:auto}.testimonial-group[aria-hidden="true"]{display:none}}
+.contact{background:var(--pale);border-radius:18px;padding:65px 6%;display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:90px}
+.contact h2{margin-bottom:15px}
+.contact p{color:#5b6b70;font-size:14px;line-height:1.7;max-width:400px}
+.contact-actions{display:flex;flex-direction:column;align-items:start;gap:18px;padding-bottom:12px}
+.contact-button{background:var(--ink);color:white;border-radius:30px;padding:15px 20px;display:flex;justify-content:space-between;gap:44px;min-width:180px;font-size:11px;font-weight:700}
+.contact-button span{color:#72d3e1}
+.contact-link{font-size:12px;font-weight:700;padding-left:18px}
+footer{border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:25px;padding:35px max(50px,calc((100vw - 1320px)/2));font-size:10px;color:#748184}
+footer .brand{color:var(--ink)}
+footer .logo-frame{width:42px;height:42px}
+footer .brand-name{font-size:15px}
+footer .brand-name small{font-size:7px}
+footer p{margin:0}
+@media(max-width:900px){
+  .hero-shell{width:calc(100% - 28px);margin-top:14px}
+  .site-header nav{display:none}
+  .hero-content{margin-top:105px}
+  .hero-image{background-position:center,58% center}
+  .section-wrap,.chapter-line{width:calc(100% - 56px)}
+  .about{padding:75px 0}
+  .about-showcase{grid-template-columns:1fr}
+  .about-aside{min-height:auto;flex-direction:row;padding:0;align-items:end}
+  .about-aside-bottom p{max-width:390px}
+  .testimonials{padding:75px 0 95px}
+  .contact{margin-bottom:50px}
+  footer{padding:30px 28px}
+}
+@media(max-width:600px){
+  .hero-shell{min-height:690px}
+  .site-header{height:74px;padding:0 23px}
+  .logo-frame{width:44px;height:44px}
+  .brand-name{font-size:14px}
+  .brand-name small{font-size:7px}
+  .header-cta{padding:10px 12px;font-size:9px}
+  .header-cta span{margin-left:7px}
+  .hero-image{background-image:linear-gradient(90deg,rgba(12,29,34,.87),rgba(16,43,50,.36)),url("assets/hero-conceitual.png");background-position:center,59% center}
+  .hero-content{margin:118px 25px 0;max-width:calc(100% - 50px)}
+  .hero-content h1{font-size:clamp(52px,12vw,70px)}
+  .hero-bottom{left:25px;right:25px}
+  .hero-scroll{display:none}
+  .chapter-line{width:calc(100% - 40px);overflow:hidden;white-space:nowrap;justify-content:space-around}
+  .chapter-line span:last-child{display:none}
+  .section-wrap{width:calc(100% - 40px)}
+  .about{padding:68px 0 52px}
+  .about-top{margin-bottom:24px}
+  .about-top h2{font-size:42px}
+  .about-aside{min-height:98px}
+  .about-aside{flex-direction:column;align-items:start;gap:20px}
+  .about-aside-bottom p{max-width:none;font-size:18px}
+  .about-cards{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(78%,1fr);grid-template-columns:none;gap:11px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 0 10px}
+  .image-card{height:255px;scroll-snap-align:start}
+  .image-card h3{left:15px;bottom:15px;font-size:18px}
+  .testimonials{padding:45px 0 75px}
+  .testimonials-heading{display:block;margin-bottom:28px}
+  .testimonials h2,.contact h2{font-size:47px}
+  .testimonials-heading>p{margin-top:18px}
+  .testimonial-card{width:290px;min-height:325px;padding:25px}
+  .testimonial-card blockquote{font-size:21px}
+  .testimonials-source{display:block;line-height:1.5}
+  .testimonials-source a{display:inline-block;margin-top:7px}
+  .contact{display:block;padding:45px 24px;margin-bottom:30px}
+  .contact-actions{margin-top:30px}
+  footer{flex-wrap:wrap;padding:27px 20px}
+  footer p{order:3;width:100%}
+}
