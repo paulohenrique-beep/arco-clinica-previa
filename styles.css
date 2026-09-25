@@ -140,8 +140,9 @@ footer p{margin:0}
   .contact-actions{margin-top:30px}
   footer{flex-wrap:wrap;padding:27px 20px}
   footer p{order:3;width:100%}
+}
 
-  /* =========================================================
+/* =========================================================
    CORREÇÕES MOBILE + ÍCONES SVG
    ========================================================= */
 
@@ -332,5 +333,4 @@ footer > a:last-child .icon {
       74% center;
   }
 
-}
 }
