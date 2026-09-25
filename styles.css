@@ -140,4 +140,197 @@ footer p{margin:0}
   .contact-actions{margin-top:30px}
   footer{flex-wrap:wrap;padding:27px 20px}
   footer p{order:3;width:100%}
+
+  /* =========================================================
+   CORREÇÕES MOBILE + ÍCONES SVG
+   ========================================================= */
+
+.icon {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: -0.12em;
+
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+
+  flex: none;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.header-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-cta .icon {
+  width: 14px;
+  height: 14px;
+  color: var(--cyan);
+}
+
+
+/* =========================================================
+   BOTÃO PRINCIPAL DO HERO
+   ========================================================= */
+
+.button-arrow {
+  display: grid;
+  place-items: center;
+}
+
+.button-arrow .icon {
+  width: 14px;
+  height: 14px;
+  color: #fff;
+}
+
+
+/* =========================================================
+   SETA "DESCUBRA MAIS"
+   ========================================================= */
+
+.hero-scroll {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.hero-scroll .icon {
+  width: 12px;
+  height: 12px;
+}
+
+
+/* =========================================================
+   DEPOIMENTOS
+   ========================================================= */
+
+.testimonials-source a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.testimonials-source a .icon {
+  width: 12px;
+  height: 12px;
+}
+
+
+/* =========================================================
+   CONTATO
+   ========================================================= */
+
+.contact-button {
+  align-items: center;
+}
+
+.contact-button .icon {
+  width: 14px;
+  height: 14px;
+  color: #72d3e1;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.contact-link .icon {
+  width: 13px;
+  height: 13px;
+  color: var(--cyan);
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer > a:last-child {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+footer > a:last-child .icon {
+  width: 12px;
+  height: 12px;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .header-cta {
+    gap: 7px;
+  }
+
+
+  /*
+    Corrige o enquadramento da foto.
+
+    Antes:
+    background-position: center, 59% center;
+
+    Isso deixava grande parte do rosto fora da tela.
+  */
+
+  .hero-image {
+    background-image:
+      linear-gradient(
+        90deg,
+        rgba(12, 29, 34, 0.92) 0%,
+        rgba(16, 43, 50, 0.66) 48%,
+        rgba(16, 43, 50, 0.30) 100%
+      ),
+      url("assets/hero-conceitual.png");
+
+    background-size:
+      cover,
+      auto 100%;
+
+    background-position:
+      center,
+      72% center;
+
+    background-repeat:
+      no-repeat;
+  }
+
+
+  .testimonials-source a {
+    display: inline-flex;
+    align-items: center;
+  }
+
+}
+
+
+/* =========================================================
+   CELULARES PEQUENOS
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+  .hero-image {
+    background-position:
+      center,
+      74% center;
+  }
+
+}
 }
